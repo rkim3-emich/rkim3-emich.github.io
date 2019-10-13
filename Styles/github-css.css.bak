@@ -1,0 +1,63 @@
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.5;
+}
+
+br {
+	border-bottom: 1px solid #115;
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	width: 20%;
+	float: left;
+}
+
+li a {
+	min-height: 50px;
+	margin: auto;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*
+.name {
+	text-decoration: none;
+	vertical-align: middle;
+	color: #eeeeee;
+	float: left;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+.links {
+	text-decoration: none;
+	text-align: center;
+	color: #eeeeee;
+	width: 20%;
+	margin: auto;
+}
+*/
+.main {
+	margin: auto;
+	width: 50%;
+}
+
+.about-me {
+  padding-left: 200pt;
+}
