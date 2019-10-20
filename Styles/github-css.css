@@ -6,6 +6,12 @@ body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16pt;
 	line-height: 1.5;
+	overflow-wrap: break-word;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 br {
@@ -32,27 +38,9 @@ li a {
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
-}
-
-/*
-.name {
-	text-decoration: none;
 	vertical-align: middle;
-	color: #eeeeee;
-	float: left;
-  text-align: center;
-  width: 30%;
-  margin: auto;
 }
 
-.links {
-	text-decoration: none;
-	text-align: center;
-	color: #eeeeee;
-	width: 20%;
-	margin: auto;
-}
-*/
 .main {
 	margin: auto;
 	width: 50%;
