@@ -10,8 +10,10 @@ body {
 }
 
 a img {
-	height: 25px;
-	width: 30px;
+	min-height: 25px;
+	min-width: 30px;
+	height: 5%;
+	width: 5%;
 }
 
 div img {
