@@ -9,7 +9,12 @@ body {
 	overflow-wrap: break-word;
 }
 
-img {
+a img {
+	height: 25px;
+	width: 30px;
+}
+
+div img {
 	max-height: 100%;
 	max-width: 100%;
 }
