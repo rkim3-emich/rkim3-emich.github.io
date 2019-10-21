@@ -14,8 +14,12 @@ img {
 	max-width: 100%;
 }
 
-br {
-	border-bottom: 1px solid #115;
+hr {
+	border-bottom: 1px solid black;
+}
+
+span {
+	vertical-align: middle;
 }
 
 .nav {
