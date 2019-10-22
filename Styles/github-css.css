@@ -12,7 +12,7 @@ body {
 a img {
 	min-height: 25px;
 	min-width: 30px;
-	height: 5%;
+	height: auto;
 	width: 5%;
 	margin-right: 5pt
 }
