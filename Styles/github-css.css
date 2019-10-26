@@ -10,11 +10,12 @@ body {
 }
 
 a img {
+	margin-top: 1pt;
 	min-height: 25px;
 	min-width: 30px;
 	height: auto;
 	width: 5%;
-	margin-right: 5pt
+	margin-right: 5pt;
 }
 
 div img {
