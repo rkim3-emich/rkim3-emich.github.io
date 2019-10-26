@@ -24,11 +24,15 @@ div img {
 }
 
 hr {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #000000;
 }
 
 span {
 	vertical-align: middle;
+}
+
+.divider {
+	border-bottom: 1px solid #34e5eb;
 }
 
 .nav {
