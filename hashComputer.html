@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hash Computer</title>
+		<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<script src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
+		<link rel="stylesheet" href="/Styles/github-css.css">
+	</head>
+	<body>
+		<nav>
+    	<ul class="nav">
+      	<li><a class="links" href="/">Ryan Kim</a></li>
+      	<li><a class="links" href="/fileHasher.html">Hash Computer</a></li>
+    	</ul>
+    </nav>
+    <div class="main">
+			<div class="hash">
+				<h2>Hash File</h2>
+				<input type="file" id="holder">
+				<div id="drop_zone">
+					<p>Drag and drop file to be hashed</p>
+				</div>
+				<br>
+				<input type="radio" name="file" id="filesha1" value="SHA-1">SHA-1
+				<input type="radio" name="file" id="filesha256" value="SHA-256" checked>SHA-256
+				<input type="radio" name="file" id="filesha384" value="SHA-384">SHA-384
+				<input type="radio" name="file" id="filesha512" value="SHA-512">SHA-512
+				<input type="radio" name="file" id="filemd5" value="MD-5">MD-5
+				
+				<br><br><strong>Hashed File  : </strong><span id='hashFileText'></span>
+				<br><br><button onclick="generateFileHash()">Calculate Hash</button>
+			</div>
+			
+			<div class="hash">
+				<h2>Hash text</h2>
+				<strong>Enter text to be hashed : </strong><input id='plainText' type='text' />
+				
+				<br>
+				<input type="radio" name="text" id="textsha1" value="SHA-1">SHA-1
+				<input type="radio" name="text" id="textsha256" value="SHA-256" checked>SHA-256
+				<input type="radio" name="text" id="textsha384" value="SHA-384">SHA-384
+				<input type="radio" name="text" id="textsha512" value="SHA-512">SHA-512
+				<input type="radio" name="text" id="textmd5" value="MD-5">MD-5
+				
+				<br><br><strong>Hashed Text  : </strong><span id='hashText'></span>
+				<br><br><button onclick="generateHash()">Calculate Hash</button>
+			</div>
+		</div>
+		<script src="/Scripts/HashComputer.js"></script>
+	</body>
+</html>
