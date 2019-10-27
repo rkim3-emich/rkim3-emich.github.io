@@ -9,30 +9,22 @@ body {
 	overflow-wrap: break-word;
 }
 
-a img {
-	margin-top: 1pt;
-	min-height: 25px;
-	min-width: 30px;
-	height: auto;
-	width: 5%;
-	margin-right: 5pt;
-}
-
-div img {
+img {
 	max-height: 100%;
 	max-width: 100%;
 }
 
 hr {
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid black;
 }
 
 span {
 	vertical-align: middle;
 }
 
-.divider {
-	border-bottom: 1px solid #34e5eb;
+.hash {
+	margin-top: 16pt;
+
 }
 
 .nav {
@@ -65,4 +57,10 @@ li a {
 
 .about-me {
   padding-left: 200pt;
+}
+
+#drop_zone {
+	border: 5px dashed gray;
+	width: 75%;
+	height: auto;
 }
