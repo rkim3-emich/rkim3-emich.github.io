@@ -14,6 +14,11 @@ img {
 	max-width: 100%;
 }
 
+a img {
+	height: 5%;
+	width: 5%;
+}
+
 hr {
 	border-bottom: 1px solid black;
 }
