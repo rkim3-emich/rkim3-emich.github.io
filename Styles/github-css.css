@@ -33,6 +33,10 @@ img {
 a img {
 	height: 5%;
 	width: 5%;
+	min-width: 50px;
+	min-height: 50px;
+	max-height: 100px;
+	max-width: 100px;
 }
 
 hr {
@@ -63,8 +67,8 @@ span {
 
 li a {
 	padding-top: .5%;
-	padding-bottom: .5%;
-	min-height: 1%;
+	padding-bottom: .4;
+	min-height: 32pt;
 	margin: auto;
 	display: block;
 	color: #fff;
@@ -75,7 +79,7 @@ li a {
 
 .main {
 	margin: auto;
-	width: 50%;
+	width: 75%;
 }
 
 .about-me {
