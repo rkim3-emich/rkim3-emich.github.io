@@ -43,3 +43,8 @@ li a {
 		padding: .5625% 1%;
 	}
 }
+@media screen and (orientation: portrait) {
+	span {
+		padding: 1% .5625%;
+	}
+}
