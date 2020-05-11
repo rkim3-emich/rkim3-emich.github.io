@@ -129,4 +129,4 @@ function run() {
 	evaluateGameState();
 }
 //Refresh on a timer
-setInterval(run, 1000)
+setInterval(run, 200)
