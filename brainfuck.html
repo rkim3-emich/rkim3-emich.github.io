@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brainf*ck Interpreter/title>
+		<meta name="author" content="Ryan Kim">
+		<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/Styles/brainfuck.css">
+	</head>
+	<body>
+		<nav>
+			<ul class="nav">
+				<li><a class="links" href="/">Ryan Kim</a></li>
+			</ul>
+    	</nav>
+		<div class="main">
+			<h1>Brainf*ck Interpreter</h1>
+			<div id="codearea">
+				<h2>Code</h2>
+				<textarea type="text" id="code"></textarea>
+			</div>
+			<aside>
+				<div id="status">
+					<h2>Status</h2>
+					<table>
+						<tr>
+							<th>Pointer</th>
+							<th>Memory[pointer]</th>
+							<th>i</th>
+							<th>Instruction</th>
+						</tr>
+						<tr>
+							<td id="pointer"></td>
+							<td id="memory-pointer"></td>
+							<td id="i"></td>
+							<td id="brainfuck-i"></td>
+						</tr>
+					</table>
+					<button type="button" onclick="step()">Step</button>
+					<button type="button" onclick="start()">Run</button>
+					<button type="button" onclick="reset()">Reset</button>
+				</div>
+				<div id="display">
+					<h2>Console</h2>
+					<p id="console"></p>
+					<input type="text" id="input" onchange="consoleInput()">
+				</div>
+			</aside>
+		</div>
+		<script src="/Scripts/brainfuck.js"></script>
+	</body>
+</html>
