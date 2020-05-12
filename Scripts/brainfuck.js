@@ -30,32 +30,48 @@ var mem_pointer_disp = document.getElementById("memory-pointer");
 var i_disp = document.getElementById("i");
 var brainfuck_i_disp = document.getElementById("brainfuck-i");
 
+//Set value for code to be hello world
 code.value = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.";
+
 //Initialize Brainf*ck code
 brainfuck = "";
+//variable to determine if code is halted
 var wait = false;
+//variable to determine if execution has started
 var started = false;
+//varaible to hold loop information
 var loop = [];
+//iterator for insturction being parsed
 var i = 0;
 
+//Array that acts as memory
 var memory = new Array(30000);
+//zero out memory
 for (var e = 0; e < memory.length; e++) {
 	memory[e] = 0;
 }
+//variable that holds pointer to memory
 var pointer = 0;
 
+//function that parses brainf*ck commands
 function parser(char) {
 	if (char == ">") {
+		//increment pointer
 		++pointer;
 	} else if (char == "<") {
+		//decrement pointer
 		--pointer;
 	} else if (char == "+") {
+		//increment memory of pointer
 		memory[pointer]++;
 	} else if (char == "-") {
+		//decrement memory of pointer
 		memory[pointer]--;
 	} else if (char == ".") {
+		//put character on console
 		log(charConverter(memory[pointer]));
 	} else if (char == ",") {
+		//get input and store it. Wait if no input
 		if (input.value == "") {
 			wait = true;
 		} else {
@@ -64,23 +80,28 @@ function parser(char) {
 		}
 		
 	} else if (char == "[") {
+		//jump forward if mem is 0
 		if (memory[pointer] == 0) {
 			jump(1);
 		}
 	} else if (char == "]") {
+		//jump back if mem is not zero
 		if (memory[pointer] != 0) {
 			jump(0);
 		}
 	}
 }
+//function that converts numbers ito characters
 function charConverter(charNumber) {
 	return String.fromCharCode(charNumber);
 }
+//function that puts characters in console
 function log(char) {
 	var string = console.textContent;
 	string += char;
 	console.textContent = string;
 }
+//function called on input change that ends wait condition
 function consoleInput() {
 	if (wait) {
 		var text = input.value.charCodeAt(0);
@@ -97,7 +118,7 @@ function consoleInput() {
 		start();
 	}
 }
-
+//function to handle loop jumping
 function jump(direction) {
 	if (direction == 1) {
 		var e = 0;
@@ -113,6 +134,7 @@ function jump(direction) {
 		i = loop[e][0];
 	}
 }
+//function that auto executes to end of script
 function start() {
 	if (wait) {
 		update();
@@ -142,6 +164,7 @@ function start() {
 		}
 	}
 }
+//function that steps through instructions
 function step() {
 	if (wait) {
 		update();
@@ -156,6 +179,7 @@ function step() {
 		update();
 	}
 }
+//function that determines where loops are
 function loopEvaluate() {
 	loop = [];
 	var loopStarts = [];
@@ -180,13 +204,14 @@ function loopEvaluate() {
 		}
 	}
 }
+//Update status
 function update() {
 	pointer_disp.textContent = pointer;
 	mem_pointer_disp.textContent = memory[pointer];
 	i_disp.textContent = i;
 	brainfuck_i_disp.textContent = brainfuck[i];
 }
-
+//Reset system parameters
 function reset() {
 	memory = new Array(30000);
 	pointer = 0;
@@ -199,12 +224,6 @@ function reset() {
 	wait = false;
 	update();
 }
-function wait(callback) {
-	if (input.value != "") {
-		() => callback();
-	} else {
-		setTimeout(wait(callback), 1000);
-	}
-}
+
 update();
 //++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.
