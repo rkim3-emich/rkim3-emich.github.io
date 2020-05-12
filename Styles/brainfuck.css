@@ -1,0 +1,149 @@
+table {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+}
+
+td {
+	text-align: center;
+	border-right: 1px solid #cccccc;
+}
+tr {
+	
+}
+
+th {
+	border-right: 1px solid #cccccc;
+	padding: 0px 10px;
+	background-color: #eeeeee;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+a img {
+	height: 5%;
+	width: 5%;
+	min-width: 50px;
+	min-height: 50px;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+hr {
+	border-bottom: 1px solid black;
+}
+
+span {
+	vertical-align: middle;
+}
+
+.hash {
+	margin-top: 16pt;
+
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.links {
+	width: 20%;
+	float: left;
+}
+
+li a {
+	padding-top: .5%;
+	padding-bottom: .4;
+	min-height: 32pt;
+	margin: auto;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.main {
+	margin: auto;
+	width: 75%;
+}
+
+
+#codearea {
+	display: flex;
+	flex-flow: column;
+	float: left;
+	width: 50%;
+	height: 100vh;
+}
+textarea {
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	width: 90%;
+	height: 62%;
+}
+#status {
+	width: 100%;
+	float: right;
+	height: 33%;
+}
+#display {
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100%;
+	float: right;
+	height: 50%;
+}
+aside {
+	display: flex;
+	flex-flow: column;
+	width: 50%;
+	height: 100vh;
+}
+h1 {
+	margin: 0;
+}
+p {
+	border-radius: 5px;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	width: 100%;
+	height: 40%;
+}
+input {
+	border: 1px solid #cccccc;
+	width: 100%;
+}
+button {
+	min-height: 10px;
+	min-width: 20px;
+	border-radius: 5px;
+	padding: 6px;
+	display: inline-block;
+	margin: 0;
+	border: 1px solid #cccccc;
+	background-color: #FFFFFF;
+	color: #000000;
+}
