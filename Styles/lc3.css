@@ -1,0 +1,254 @@
+#raw {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 2;
+}
+#raw div {
+	border-radius: 5px;
+	margin: auto;
+	width: 50%;
+	height: 90%;
+	background-color: #FFFFFF;
+}
+#raw div textarea {
+	margin: auto;
+	width: 85%;
+	height: 50%;
+	display: block;
+}
+#assembly div textarea {
+	margin: auto;
+	width: 85%;
+	height: 50%;
+	display: block;
+}
+#assembly {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 2;
+}
+#assembly div {
+	border-radius: 5px;
+	margin: auto;
+	width: 50%;
+	height: 90%;
+	background-color: #FFFFFF;
+}
+#assembly div textarea {
+	margin: auto;
+	width: 85%;
+	height: 50%;
+	display: block;
+}
+#assembly div p {
+	margin-left: 7.5%;
+}
+div span {
+	margin-left: 7.5%;
+}
+div h3 {
+	padding-top: 1%;
+	margin-left: 7.5%;
+}
+#raw div p {
+	margin-left: 7.5%;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #cccccc;
+	border-collapse: collapse;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+}
+
+td {
+	text-align: center;
+	border-right: 1px solid #cccccc;
+}
+
+th {
+	border-right: 1px solid #cccccc;
+	padding: 0px 10px;
+	background-color: #eeeeee;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.5;
+	overflow: hidden;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+a img {
+	height: 5%;
+	width: 5%;
+	min-width: 50px;
+	min-height: 50px;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+hr {
+	border-bottom: 1px solid black;
+}
+
+span {
+	vertical-align: middle;
+}
+
+.hash {
+	margin-top: 16pt;
+
+}
+
+.nav {
+	height: 7vh;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.links {
+	width: 20%;
+	float: left;
+}
+
+li a {
+	padding-top: .5%;
+	padding-bottom: .4;
+	min-height: 32pt;
+	margin: auto;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.main {
+	margin: auto;
+	width: 75%;
+}
+
+h2 {
+	margin-bottom: 0;
+	font-size: 18pt;
+}
+span input {
+	display: inline;
+	width: 5%;
+}
+#codearea {
+	padding-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	float: left;
+	width: 95%;
+	height: 15%;
+	display: inline;
+}
+#codearea button{
+	min-height: 20px;
+	width: 45%;
+}
+button[disabled="disabled"] {
+	color: #cccccc;
+}
+textarea {
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	width: 90%;
+	height: 62%;
+}
+#status {
+	padding-top: 0;
+	width: 100%;
+	float: right;
+	height: 35%;
+}
+#display {
+	margin-bottom: 0;
+	width: 100%;
+	float: right;
+	height: 70%;
+}
+aside {
+	margin-top: 0;
+	padding-top: 0;
+	float: right;
+	width: 50%;
+	height: 90vh;
+}
+main {
+	margin-top: 0;
+	padding-top: 0;
+	float: left;
+	width: 50%;
+	height: 90vh;
+}
+h1 {
+	font-size: 25pt;
+	height: 3vh;
+	margin: 0;
+}
+#display p {
+	border-radius: 5px;
+	background-color: #eeeeee;
+	border: 1px solid #cccccc;
+	width: 100%;
+	height: 55%;
+	white-space: pre-line;
+	overflow-y: scroll;
+	font-size: 12pt;
+}
+input {
+	border: 1px solid #cccccc;
+	width: 100%;
+}
+button {
+	min-height: 10px;
+	min-width: 20px;
+	border-radius: 5px;
+	padding: 6px;
+	display: inline-block;
+	margin: 0;
+	border: 1px solid #cccccc;
+	background-color: #FFFFFF;
+	color: #000000;
+}
+
+#memory {
+	width: 95%;
+	height: 50vh;
+}
+#memory input {
+	width: 50%;
+}
