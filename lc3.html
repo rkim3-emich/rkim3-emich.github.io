@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LC3 Simulator</title>
+		<meta name="author" content="Ryan Kim">
+		<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+		<meta name="robots" content="noindex,nofollow">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/Styles/lc3.css">
+	</head>
+	<body>
+		<div id="raw">
+			<div>
+				<h3>Binary/Hexadecimal</h3>
+				<textarea id="rawcode"></textarea>
+				<span>
+					<input type="radio" id="bin" name="codetype" value="binary">
+					<label for="binary">Binary</label>
+					<input type="radio" id="hex" name="codetype" value="hex">
+					<label for="hex">Hex</label>
+				</span>
+				<p>Paste or type code in box above and press the submit button. Select between hexadecimal and binary above</p>
+				<span>
+					<button type="button" onclick="toggle()">Close</button>
+					<button type="button" onclick="submit()">Submit</button>
+				</span>
+			</div>
+		</div>
+		<div id="assembly">
+			<div>
+				<h3>Assembly</h3>
+				<textarea id="assemblyCode"></textarea>
+				<p>Paste or type code in box above and press the submit button.</p>
+				<span>
+					<button type="button" onclick="toggleAsm()">Close</button>
+					<button type="button" onclick="submitAsm()">Submit</button>
+				</span>
+			</div>
+		</div>
+		<nav>
+			<ul class="nav">
+				<li><a class="links" href="/">Ryan Kim</a></li>
+			</ul>
+    	</nav>
+		<div class="main">
+			<h1>LC3</h1>
+			<main>
+				<div id="codearea">
+					<h2>Code</h2>
+					<button type="button" onclick="toggle()">Hex/Bin</button>
+					<button type="button" onclick="toggleAsm()">Assembly</button>
+				</div>
+				<div id="memory">
+					<h2>Memory</h2>
+					<button onclick="viewStart--;updateMemory();">&and;</button>
+					<button onclick="viewStart++;updateMemory();">&or;</button>
+					<input type="text" onkeyup="searchMem()" id="search">
+					<table id="memTable">
+					</table>
+				</div>
+			</main>
+			<aside>
+				<div id="status">
+					<h2>Status</h2>
+					<table id="registers">
+					</table>
+					<button type="button" onclick="step()">Step</button>
+					<button type="button" onclick="start()">Run</button>
+					<button type="button" onclick="reset()">Reset</button>
+					<button type="button" id="halt" onclick="toggleHalt();">Unhalt</button>
+				</div>
+				<div id="display">
+					<h2>Console</h2>
+					<p id="console"></p>
+					<input type="text" id="input">
+				</div>
+			</aside>
+		</div>
+		<script src="/Scripts/lc3.js"></script>
+	</body>
+</html>
