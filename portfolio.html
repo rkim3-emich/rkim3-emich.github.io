@@ -3,7 +3,7 @@
     		<title>Portfolio</title>
     		<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
     		<meta charset="utf-8">
-    		<link rel="stylesheet" type="text/css" href="/Styles/github-css.css">
+    		<link rel="stylesheet" type="text/css" href="github-css.css">
   	</head>
   	<body data-gr-c-s-loaded="true">
 		<nav>
@@ -17,9 +17,10 @@
     	</nav>
 
 		<div class="main">
-			<div>
-				<img src="/Resources/ScreenCapture.jpg" alt="Loop of same image over again as a result of recording a recording. Demonstration of screen recorder program">
-				<p><strong>Screen Recorder</strong></p>
+			<p><strong>Screen Recorder</strong><input type="button" onclick="expand('screenRecorder')" value="+"></p>
+			<div id="screenRecorder" style="display: none;">
+				<img src="/Resources/ScreenCapture.jpg" alt="Loop of same image over again as a result of recording a recording. Demonstration of screen recorder program, image">
+				
 				<p>A proof of concept screen recorder program written in C#. The program writes video to capture.mp4 using MPEG4 video codec.</p>
 				<p>Github Repository: <a href="https://github.com/rkim3-emich/ScreenRecorder">https://github.com/rkim3-emich/ScreenRecorder</a></p>
 				<p><strong>Technologies Used:</strong></p>
@@ -30,10 +31,13 @@
 					<li>FFMPEG</li>
 				</ul>
 			</div>
+
 			<hr class="divider">
-			<div>
+
+			<p><strong>TCP Messenger</strong><input type="button" onclick="expand('TCPMessenger')" value="+"></p>
+			<div id="TCPMessenger" style="display: none;">
 				<img src="/Resources/TCPMessenger.jpg" alt="Two windows showing a chat between a server and client, image">
-				<p><strong>TCP Messenger</strong></p>
+
 				<p>A TCP messenger with a client and a server. The server can accept connections from multiple clients at the same time and send messages to all connected clients. It will work over LAN without further work other than opening the executables, but it could be configured to accept connections from outside LAN if you port forward to port 8000 on your local ip.</p>
 				<p>Github Repository: <a href="https://github.com/rkim3-emich/TCPMessenger">https://github.com/rkim3-emich/TCPMessenger</a></p>
 				<p><strong>Technologies/Skills Used:</strong></p>
@@ -44,10 +48,13 @@
 					<li>Sockets</li>
 				</ul>
     			</div>
+
 			<hr class="divider">
-    			<div>
+
+			<p><strong>Hash Computer</strong><input type="button" onclick="expand('hashComputer')" value="+"></p>
+    		<div id="hashComputer" style="display: none;">
 				<img src="/Resources/HashComputer.jpg" alt="Webpage that shows two forms, one that computes hashes for files, and one that computes hases of text, image">
-				<p><strong>Hash Computer</strong></p>
+
 				<p>A webpage that is able to compute the hashes of files and text. You can use it <a href="https://rkim3-emich.github.io/hashComputer.html">here</a>.</p>
 				<p>The program is not hosted in its own repository, but the files are contained in my github pages repository at <a href="https://github.com/rkim3-emich/rkim3-emich.github.io">https://github.com/rkim3-emich/rkim3-emich.github.io</a></p>
 				<p><strong>Technologies/Skills Used:</strong></p>
@@ -57,15 +64,80 @@
 					<li>HTML5 file reader API</li>
 				</ul>
 			</div>
+
+			<hr class="divider">
+
+			<p><strong>Brainf*ck Interpreter</strong><input type="button" onclick="expand('brainf*ck')" value="+"></p>
+    		<div id="brainf*ck" style="display: none;">
+				<img src="/Resources/brainfuck.jpg" alt="Webpage that shows brainf*ck code to print hello world to console on left with status of program in top right after execution and hello world printed to console in the bottom right, image">
+
+				<p>A webpage that is able to interpret and execute code written in brainf*ck, an esoteric language. For more information on the language, you can read about it on Wikipedia <a href="https://en.wikipedia.org/wiki/Brainfuck">here</a>. You can use the interpreter <a href="https://rkim3-emich.github.io/brainfuck.html">here</a>.</p>
+
+				<p>The program is not hosted in its own repository, but the files are contained in my github pages repository at <a href="https://github.com/rkim3-emich/rkim3-emich.github.io">https://github.com/rkim3-emich/rkim3-emich.github.io</a></p>
+
+				<p><strong>Technologies/Skills Used:</strong></p>
+				<ul> 
+					<li>JavaScript</li>
+					<li>Language interpretation</li>
+					<li>Memory Simulation</li>
+				</ul>
+			</div>
+
+			<hr class="divider">
+
+			<p><strong>LC3 Simulator</strong><input type="button" onclick="expand('lc3')" value="+"></p>
+    		<div id="lc3" style="display: none;">
+				<img src="/Resources/lc3.jpg" alt="Webpage that shows table of lc3 memory information to print hello world in bottom left, register statuses in top right, and hello world printed to console in bottom right, image">
+
+				<p>A webpage that is able to simulate the little computer 3 (lc3), a theoretical computer commonly used to teach low-level computing especially for introduction computer organization classes. More information can be found at the Wikipedia link <a href="https://en.wikipedia.org/wiki/Little_Computer_3">here</a>. You can use the simulator <a href="https://rkim3-emich.github.io/lc3.html">here</a>.</p>
+
+				<p>The program is not hosted in its own repository, but the files are contained in my github pages repository at <a href="https://github.com/rkim3-emich/rkim3-emich.github.io">https://github.com/rkim3-emich/rkim3-emich.github.io</a></p>
+
+				<p><strong>Technologies/Skills Used:</strong></p>
+				<ul> 
+					<li>JavaScript</li>
+					<li>Language interpretation</li>
+					<li>Simple OS Development</li>
+				</ul>
+			</div>
+
+			<hr class="divider">
+
+			<p><strong>CAPTCHA Generator</strong><input type="button" onclick="expand('captcha')" value="+"></p>
+    		<div id="captcha" style="display: none;">
+				<img src="/Resources/captchaGen.jpg" alt="Webpage that shows distorted handwritten nummber captcha and answer with a green box confirming that the inputted answer is correct, image">
+
+				<p>A webpage that is able to generate a simple CAPTCHA of specified length by combining images of handwritten digits from the MNIST dataset and check if user input matches the captcha. You can use it <a href="https://rkim3-emich.github.io/captcha-gen.html">here</a>.</p>
+
+				<p>The program is not hosted in its own repository, but the files are contained in my github pages repository at <a href="https://github.com/rkim3-emich/rkim3-emich.github.io">https://github.com/rkim3-emich/rkim3-emich.github.io</a></p>
+
+				<p><strong>Technologies/Skills Used:</strong></p>
+				<ul> 
+					<li>JavaScript</li>
+					<li>AJAX (to retrieve image data)</li>
+					<li>HTML5 canvas graphics (to parse and display image data)</li>
+				</ul>
+			</div>
 			<div class="footer">
 				<hr>
 				<span>
-					<a href="https://www.linkedin.com/in/ryan-kim3/"><img src="/Resources/Iinked-in.png" style="width: 6%;" alt="LinkedIn logo"></a>
+					<a href="https://www.linkedin.com/in/ryan-kim3/"><img src="/Resources/Iinked-in.png" style="width: 6%;" alt="LinkedIn logo, image link"></a>
 				<span>
 				<span>
-					<a href="https://www.github.com/rkim3-emich/"><img src="/Resources/GitHub-Mark-64px.png" alt="Github logo"></a>
+					<a href="https://www.github.com/rkim3-emich/"><img src="/Resources/GitHub-Mark-64px.png" alt="Github logo, image link"></a>
 				</span>
 			</div>
 		</div>
+		<script>
+			function expand(id) {
+				var div = document.getElementById(id);
+
+				if (div.style.display == "block") {
+					div.style.display = "none";
+				} else {
+					div.style.display = "block";
+				}
+			}
+		</script>
 	</body>
 </html>
