@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Captcha Generator</title>
+		<meta name="author" content="Ryan Kim">
+		<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="captchaGen.css">
+	</head>
+	<body>
+		<nav>
+			<ul class="nav">
+				<li><a class="links" href="/">Ryan Kim</a></li>
+			</ul>
+    	</nav>
+		<div class="main">
+			<h1>Captcha Generator</h1>
+
+			<canvas id="captcha" height="28"></canvas>
+			<div>
+				<label>Length of Captcha: </label>
+				<input type="number" id="length" value="4" onChange="captchaGen();" required>
+			</div>
+			<div>
+				<label>Captcha Answer:    </label>
+				<input type="text" id="answer">
+			</div>
+			<button onClick="captchaGen();">Generate new captcha</button>
+			<button onClick="checkCaptcha();">Check Answer</button>
+			<p id="notify"></p>
+			<p>This is a simple captcha generator that combines handwritten digits from the MNIST handwritten digit dataset. Practically, more secure methods of captcha should be used to deter bots due to the increasing capabilities of bots especially as machine learning allows for more advanced image recognition. Furthermore, the program renders the captcha and answer on the client side due to constraints of github pages which should not done due to the risk of client side manipulation of the code. For more secure captcha generation, the code and answer should be generated on the server with the captcha being sent to the user and then the user answer should be sent to the server to be compared against the server's answer.</p>
+		</div>
+		<script src="captchaGen.js"></script>
+	</body>
+</html>
