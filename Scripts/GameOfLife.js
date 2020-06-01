@@ -129,4 +129,15 @@ function run() {
 	evaluateGameState();
 }
 //Refresh on a timer
-setInterval(run, 200)
+var interval = setInterval(run, 1000)
+
+//Reset function
+function reset() {
+	clearInterval(interval);
+	for (var y = 0; y < SIZE; y++) {
+		for (var x = 0; x < SIZE; x++) {
+			board[y][x] = rand();
+		}
+	} 
+	interval = setInterval(run, 1000);
+}
