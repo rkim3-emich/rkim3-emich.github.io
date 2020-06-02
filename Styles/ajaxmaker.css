@@ -1,0 +1,99 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16pt;
+	line-height: 1.5;
+	overflow-wrap: break-word;
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+a img {
+	height: 5%;
+	width: 5%;
+	min-width: 50px;
+	min-height: 50px;
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.links {
+	width: 20%;
+	float: left;
+}
+
+li a {
+	padding-top: .5%;
+	padding-bottom: .4;
+	min-height: 32pt;
+	margin: auto;
+	display: block;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.main {
+	margin: auto;
+	width: 75%;
+}
+
+#responseHeaders {
+	margin: 0;
+	border: 2px solid #ededed;
+	overflow-y: scroll;
+	white-space: pre-line;
+	height: 25%;
+}
+#responseBody {
+	margin: 0;
+	border: 2px solid #ededed;
+	overflow-y: scroll;
+	white-space: pre-line;
+	height: 50%;
+}
+#events {
+	margin: 0;
+	border: 2px solid #ededed;
+	overflow-y: scroll;
+	white-space: pre-line;
+	height: 25%;
+}
+
+#set {
+	float: left;
+	width: 50%
+}
+#response {
+	float: right;
+	width: 50%;
+	height: 50vh;
+}
+.setterZone {
+	display: block;
+	width: 50%;
+}
+
+h1 {
+	margin: 3pt;
+}
+h3 {
+	margin: 0;
+}
+#requestHeaders {
+	height: 30%;
+}
