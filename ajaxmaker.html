@@ -1,0 +1,43 @@
+<html class="gr__rkim3-emich_github_io">
+	<head>
+		<title>Whiteboard</title>
+		<meta name="author" content="Ryan Kim">
+		<meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="/Styles/ajaxmaker.css">
+  	</head>
+	<body data-gr-c-s-loaded="true">
+		<nav>
+			<ul class="nav">
+				<li><a class="links" href="/">Ryan Kim</a></li>
+			</ul>
+    	</nav>
+
+		<div class="main">
+			<h1>AJAX Call Maker</h1>
+			<div id="set" style="margin: auto;">
+				<h3>Request Url</h3>
+				<input id="website" class="setterZone" type="text" placeholder="www.example.com">
+				<h3>Request Headers</h3>
+				<textarea id="requestheaders" class="setterZone" placeholder="Accept-Language: en-US"></textarea>
+				<h3>Request Type</h3>
+				<span>
+					<input type="radio" id="get" name="requestType" value="GET" checked>
+					<label for="GET">GET</label>
+					<input type="radio" id="post" name="requestType" value="POST">
+					<label for="POST">POST</label>
+				</span>
+				<button onClick="submit();" class="setterZone">Send Request</button>
+			</div>
+			<div id="response">
+				<h3>AJAX Events:</h3>
+				<p id="events"></p>
+				<h3>Response Headers:</h3>
+				<p id="responseHeaders"></p>
+				<h3>Response Body:</h3>
+				<p id="responseBody"></p>
+			</div>
+		</div>
+		<script src="/Scripts/ajaxmaker.js"></script>
+	</body>
+</html>
