@@ -204,17 +204,17 @@
 	"f17": {
 		"semester": "Fall 2017",
 		"classKeys": ["hista", "scione", "sema", "mathone", "acengone"],
-		"histb": {
+		"hista": {
 			"emich": false,
 			"id": "ECA",
 			"title": "Academy Big History (World) B/College Lit"
 		},
-		"scitwo": {
+		"scione": {
 			"emich": false,
 			"id": "ECA",
 			"title": "Academy Science 2"
 		},
-		"semb": {
+		"sema": {
 			"emich": false,
 			"id": "ECA",
 			"title": "Academy Seminar B"
@@ -224,7 +224,7 @@
 			"id": "ECA",
 			"title": "Academy Math 1"
 		},
-		"engtwo": {
+		"acengone": {
 			"emich": false,
 			"id": "ECA",
 			"title": "Academy English 1"
