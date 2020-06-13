@@ -1,7 +1,7 @@
 {
 	"creditInfo": {
 		"titles": ["Attempt Hours", "Passed Hours", "Earned Hours", "GPA Hours", "Quality Points", "GPA"],
-		"data": [40.000, 40.000, 40.000, 40.000, 160.00, 4.00],
+		"data": [40.000, 40.000, 40.000, 40.000, 160.00, 4.00]
 	},
 	"semesters": ["w20", "f19", "w19", "f18", "s18", "w18", "f17"],
 	"w20": {
