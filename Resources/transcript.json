@@ -207,17 +207,17 @@
 		"hista": {
 			"emich": false,
 			"id": "ECA",
-			"title": "Academy Big History (World) B/College Lit"
+			"title": "Academy Big History (World) A/College Lit"
 		},
 		"scione": {
 			"emich": false,
 			"id": "ECA",
-			"title": "Academy Science 2"
+			"title": "Academy Science 1"
 		},
 		"sema": {
 			"emich": false,
 			"id": "ECA",
-			"title": "Academy Seminar B"
+			"title": "Academy Seminar"
 		},
 		"mathone": {
 			"emich": false,
