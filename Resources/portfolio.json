@@ -66,7 +66,7 @@
 	"barcode": {
 		"name": "Barcode Generator",
 		"image": {
-			"source": "/Resources/barcodegen.jpg",
+			"source": "/Resources/barcodeGen.jpg",
 			"alt": "Webpage that shows barcode in code 128-b format with 'Barcode' as encoded data, image"
 		},
 		"paragraphs": ["A webpage that creates barcodes in the code 128-b format. You can use it <a href=\"https://rkim3-emich.github.io/barcodeGen.html\">here</a>.", "The program is not hosted in its own repository, but the files are contained in my github pages repository at <a href=\"https://github.com/rkim3-emich/rkim3-emich.github.io\">https://github.com/rkim3-emich/rkim3-emich.github.io</a>"],
