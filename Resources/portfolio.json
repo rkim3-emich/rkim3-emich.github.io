@@ -15,8 +15,7 @@
 			"source": "/Resources/TCPMessenger.jpg",
 			"alt": "Two windows showing a chat between a server and client, image"
 		},
-		"paragraphs": ["A TCP messenger with a client and a server. The server can accept connections from multiple clients at the same time and send messages to all connected clients. It will work over LAN without further work other than opening the executables, but it could be configured to accept connections from outside LAN if you port forward to port 8000 on your local ip.", "Github Repository: <a href=
-			"https://github.com/rkim3-emich/TCPMessenger\">https://github.com/rkim3-emich/TCPMessenger</a>"],
+		"paragraphs": ["A TCP messenger with a client and a server. The server can accept connections from multiple clients at the same time and send messages to all connected clients. It will work over LAN without further work other than opening the executables, but it could be configured to accept connections from outside LAN if you port forward to port 8000 on your local ip.", "Github Repository: <a href=\"https://github.com/rkim3-emich/TCPMessenger\">https://github.com/rkim3-emich/TCPMessenger</a>"],
 		"technologies": ["C#", "Windows Presentation Foundation (WPF)", "Threading", "Web Sockets"]
 	},
 	"hashcomputer": {
