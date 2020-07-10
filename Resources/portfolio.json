@@ -103,7 +103,7 @@
 		"name": "Webcam Cropper",
 		"image": {
 			"source": "/Resources/Webcam-cropper.jpg",
-			"alt": "Two open videos from a webcam with one on the right showing original photo of person in front of blue rectangle outlined in green with white walls, one on left shows original image cropped to just show the person in front of the blue rectangle, image"
+			"alt": "Two open videos from a webcam with one on the left showing original photo of person in front of blue rectangle outlined in green with white walls, one on right shows original image cropped to just show the person in front of the blue rectangle, image"
 		},
 		"paragraphs": ["A python script created to crop my webcamera footage from my laptop to an area of higher contrast. This was done to reduce the amount of extraneous background from my video feed.", "The Python script can be found <a href=\"https://github.com/rkim3-emich/Webcam-Crop\">here</a>. In order to run the script you will need the OpenCV library and a video capture device. The lighting and contrast of the background will drastically affect results."],
 		"technologies": ["Python", "OpenCV", "Image processing (thresholding and contour finding)"]
