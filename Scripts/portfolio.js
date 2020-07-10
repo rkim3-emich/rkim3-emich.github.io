@@ -47,7 +47,7 @@ function render() {
 		var paragraphs = jsonObj[keys[i]]["paragraphs"];
 		for (var e = 0; e < paragraphs.length; e++) {
 			var description = document.createElement("p");
-			description.innerHTML = paragraphs[i];
+			description.innerHTML = paragraphs[e];
 			hidDiv.appendChild(description);
 		}
 
