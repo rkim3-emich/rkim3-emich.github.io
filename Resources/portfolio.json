@@ -1,5 +1,5 @@
 {
-	"projects": ["screenrecorder", "tcpmessenger", "hashcomputer", "brainfuck", "lc3", "captcha", "gameoflife", "barcode", "whiteboard", "ajax", "navigator"],
+	"projects": ["screenrecorder", "tcpmessenger", "hashcomputer", "brainfuck", "lc3", "captcha", "gameoflife", "barcode", "whiteboard", "ajax", "navigator", "cropper"],
 	"screenrecorder": {
 		"name": "Screen Recorder",
 		"image": {
@@ -98,5 +98,14 @@
 		},
 		"paragraphs": ["A webpage that randomly generates a point to navigate to and then calculates, renders, and follows a path to the randomly generated point. You can use it <a href=\"https://rkim3-emich.github.io/pathing.html\">here</a>.", "The program is not hosted in its own repository, but the files are contained in my github pages repository at <a href=\"https://github.com/rkim3-emich/rkim3-emich.github.io\">https://github.com/rkim3-emich/rkim3-emich.github.io</a>"],
 		"technologies": ["JavaScript", "Pathing", "Dynamic DOM generation"]
+	},
+	"cropper": {
+		"name": "Webcam Cropper",
+		"image": {
+			"source": "/Resources/Webcam-cropper.jpg",
+			"alt": "Two open videos from a webcam with one on the right showing original photo of person in front of blue rectangle outlined in green with white walls, one on left shows original image cropped to just show the person in front of the blue rectangle, image"
+		},
+		"paragraphs": ["A python script created to crop my webcamera footage from my laptop to an area of higher contrast. This was done to reduce the amount of extraneous background from my video feed.", "The Python script can be found <a href=\"https://github.com/rkim3-emich/Webcam-Crop\">here</a>. In order to run the script you will need the OpenCV library and a video capture device. The lighting and contrast of the background will drastically affect results."],
+		"technologies": ["Python", "OpenCV", "Image processing (thresholding and contour finding)"]
 	}
 }
