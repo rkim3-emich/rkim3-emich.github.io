@@ -1,5 +1,5 @@
 {
-	"projects": ["screenrecorder", "tcpmessenger", "hashcomputer", "brainfuck", "lc3", "captcha", "gameoflife", "barcode", "whiteboard", "ajax", "navigator", "cropper"],
+	"projects": ["screenrecorder", "tcpmessenger", "hashcomputer", "brainfuck", "lc3", "captcha", "gameoflife", "barcode", "whiteboard", "ajax", "navigator", "cropper", "facedetection"],
 	"screenrecorder": {
 		"name": "Screen Recorder",
 		"image": {
@@ -107,5 +107,14 @@
 		},
 		"paragraphs": ["A python script created to crop my webcamera footage from my laptop to an area of higher contrast. This was done to reduce the amount of extraneous background from my video feed.", "The Python script can be found <a href=\"https://github.com/rkim3-emich/Webcam-Crop\">here</a>. In order to run the script you will need the OpenCV library and a video capture device. The lighting and contrast of the background will drastically affect results."],
 		"technologies": ["Python", "OpenCV", "Image processing (thresholding and contour finding)"]
+	},
+	"facedetection": {
+		"name": "Face Concealer",
+		"image": {
+			"source": "/Resources/facedetection.jpg",
+			"alt": "Two open videos from a webcam with one on the left showing original photo of person, one on right shows original image with black circle concealing face, image"
+		},
+		"paragraphs": ["A python script created to remove faces from a video feed. The script accomplishes this by using the frontal face HAAR cascade model in cv2 and then drawing over the detected faces.", "The Python script can be found <a href=\"https://github.com/rkim3-emich/FaceDetection\">here</a>."],
+		"technologies": ["Python", "OpenCV", "Computer Vision"]
 	}
 }
